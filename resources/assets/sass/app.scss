@@ -1,0 +1,48 @@
+// Fonts
+@import url("https://fonts.googleapis.com/css?family=Raleway:300,400,600");
+
+// Variables
+@import "variables";
+
+// Bootstrap
+@import '~bootstrap/scss/bootstrap';
+@import '~font-awesome/scss/font-awesome';
+@import '~mdbootstrap/scss/mdb';
+@import 'sidebarDefault.css';
+$sideNavColor: #ABB2B9;
+$mainContent: #FAFAFA;
+$iconColor: #A3A3A3;
+#mContent{
+	width: 100%;
+	position:relative;
+  	margin-top:4%;
+  	background-color: $mainContent;
+	//left sidebar starts here
+		#sidebar{
+			width: 20% !important;
+			.list-group{
+				width: 100% !important;
+				.list-group-item{
+					border: none !important;
+					color: black !important;
+					i{
+						color:  $iconColor;
+					}
+					&:first-child{
+						padding-top: 15%;
+					}
+				}
+			}
+		}
+	//left sidebar ends here
+	//right content starts here
+		main{
+			width:70%;
+			padding: 2% 4% !important;
+		} 
+	//right content
+
+}
+sg-sidenav{
+	width: 25% !important;
+}
